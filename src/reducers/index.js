@@ -1,6 +1,7 @@
 import { combineReducers } from "redux";
 const initialState = {
-  users: []
+  users: [],
+  listCharacter: []
 };
 const users = (state = { ...initialState }, action) => {
   const nextState = { ...state };
