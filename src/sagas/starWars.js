@@ -19,4 +19,4 @@ function* rootSaga() {
   yield takeLatest("CHARACTER_REQUESTED", fetchCharacters);
 }
 
-export default starWarsSaga;
+export default rootSaga;

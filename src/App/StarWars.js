@@ -21,7 +21,14 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
-  return {};
+  return {
+    fetchUsersCharacter: ()=>{
+      dispatch(
+        {
+type:'CHARACTER_REQUESTED'
+        } )
+    }
+  };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(StarWars);
